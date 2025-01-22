@@ -70,7 +70,7 @@
   width: 1140px;
   height: 62px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-evenly;
   align-items: center;
   margin: 20px 140px;
@@ -110,6 +110,10 @@
 
 .item-4 {
   color: crimson;
+}
+
+.nav-menu {
+  display: none;
 }
 
 .contact-button {
@@ -370,7 +374,7 @@
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
   width: 300px;
-  height: 230px;
+  height: 220px;
 }
 
 .story-titlee {
@@ -395,6 +399,7 @@
   /* width: 1439px; */
   height: 520px;
   width: 1070px;
+
   background: linear-gradient(0deg, rgba(82, 3, 112, 0.939) 1%, white 100%);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -455,15 +460,25 @@
     padding: 0 10px;
     margin: 0 0px;
     overflow-x: hidden;
-  
+
   }
-.background-img,.story-section img{
-max-width:400px;
-padding: 0;
-margin: 0;
-}
-  .nav-container {
+
+  .banner-title {
+    padding-top: 0;
+    margin: 5px;
+  }
+
+  .background-img,
+  .story-section img {
+    max-width: 400px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-container,
+  .marquee {
     visibility: hidden;
+
   }
 
   .nav-banner {
@@ -472,44 +487,69 @@ margin: 0;
   }
 
   .banner-container img {
-    width: 100%;
+    /* width:100%; */
     margin: 0;
     padding: 0;
   }
 
-
-
-
-
-
-
-
-  .curriculum-container {
-    flex-direction: column;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 10px;
-    width: 560px;
-    justify-items: center;
+  .navbar-logo img {
+    visibility: visible;
   }
 
-  .curriculum-header {
-    text-align: center;
-    padding: 0 0;
-    margin: 0;
-    width: 100%;
 
-  }
 
-  .circle-container,.story-container {
-    display: none;
-  }
 
-  .footer-container{
-    
-  }
-  .story-section,.stander-section,.nav-container,.footer-container{
-    padding: 0;
-    width: 576px;
-     margin: 0 auto;
-  }
+
+.nav-container {
+  border-bottom: 1px solid rgb(255, 0, 25);
+
+}
+
+.curriculum-container {
+  flex-direction: column;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 10px;
+  width: 560px;
+  justify-items: center;
+}
+
+.curriculum-header {
+  text-align: center;
+  padding: 0 0;
+  margin: 0;
+  width: 100%;
+
+}
+
+.circle-container,
+.story-container {
+  display: none;
+}
+
+.footer-container {
+  grid-template-columns: repeat(1, 1fr);
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+
+}
+
+.story-section,
+.stander-section,
+.nav-container,
+.footer-container {
+  padding: 0;
+  width: 576px;
+  margin: 0 auto;
+}
+
+.item-header {
+  margin: 5px;
+}
+
+.footer-content .logo-description {
+  margin: 5px;
+}
+
+
 }
